@@ -1,0 +1,12 @@
+footer{
+	.social{
+		.fa{
+		background-color:black;
+		color:white;
+		padding:2%;
+		font-size:15px;
+		margin:3px;
+		@include border-radius(10px);
+		}
+	}
+}

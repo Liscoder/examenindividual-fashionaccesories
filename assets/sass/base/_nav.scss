@@ -1,0 +1,15 @@
+a{
+	color:#bbbbbb;
+}
+.nav > li > a:hover, .nav > li > a:focus,.nav> li.active {
+    text-decoration: none;
+    background-color: rgba(255, 117, 114, 0.83);
+    color:white;
+    @include border-radius(12px);
+ }
+.navbar-brand{
+	font-family:"Raleway";
+	font-size:30px;
+	color:black;
+	padding-top:2%;
+}

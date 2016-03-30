@@ -1,0 +1,16 @@
+.float-left{
+	float:left;
+}
+.float-right{
+	float:right;
+	text-align:left;
+	.informacion{
+		padding-left:10%;
+	}
+
+}
+.btn{
+	background-color: #ff7572;
+	padding:1%;
+	color:white;
+}

@@ -1,0 +1,108 @@
+mixin fotografia(image)
+	.col-md-3
+		.contenedor.text-center
+			img(src=image)
+			p Deliver Wide
+			p 
+				span.fa.fa-star
+				span.fa.fa-star
+				span.fa.fa-star
+				span.fa.fa-star
+				span.fa.fa-star
+			p $218.00
+mixin separacion(section1,section2,section3)
+	nav.margin-auto.text-center
+		ul.pagination
+			li:a(href="#" aria-label="Previus")
+				span(aria-hidden="true") &laquo;
+			li:a.active=section1
+			li:a=section2
+			li:a=section3
+			li:a(href="#" aria-label="Previus")
+				span(aria-hidden="true") &raquo;
+mixin marcas(imagenmarca)
+	.col-md-2
+		.contenedor
+			img(src=imagenmarca)
+mixin estrellas(columnas)
+	.row.columnas
+		p
+			span.fa.fa-star
+			span.fa.fa-star
+			span.fa.fa-star
+			span.fa.fa-star
+			span.fa.fa-star
+mixin clothing(ropa,antes)
+	.col-md-4
+		.col-md-6
+			img(src=ropa)
+		.col-md-6
+			h4 Deliver Wide
+			.col-md-6
+				p=antes
+			.col-md-6
+				p $218.00
+			+estrellas(row)
+			p
+				span.fa.fa-shopping-cart Add to Cart
+mixin blog(imagenblog)
+	.col-md-3
+		.contenedor
+			img(src=imagenblog)
+			h5 THE SAMPLE HEADING TITLE
+			p 27/11/2015
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, rerum, perferendis.
+			span Read more...
+mixin detalles(topic,parrafo)
+		h4=topic
+		p= parrafo
+mixin topics(title)
+	case title
+		when "MY ACCOUNT"
+			.col-md-2
+				h4 MY ACCOUNT
+				ul 
+					li
+						span.fa.fa-caret-right My account
+					li
+						span.fa.fa-caret-right Order History
+					li
+						span.fa.fa-caret-right Width List
+					li
+						span.fa.fa-caret-right Newsletter
+				
+		when "INFORMATION"
+			.col-md-2 
+				h4 INFORMATION
+				ul
+					li
+						span.fa.fa-caret-right About Us
+					li
+						span.fa.fa-caret-right Delivery Information 
+					li
+						span.fa.fa-caret-right Width List
+					li
+						span.fa.fa-caret-right Newsletter		
+		when "EXTRAS"
+			.col-md-2
+				h4 EXTRAS
+				ul
+					li
+						span.fa.fa-caret-right Brands
+					li
+						span.fa.fa-caret-right Gift Vouchers 
+					li
+						span.fa.fa-caret-right Affiliates
+					li
+						span.fa.fa-caret-right Specials
+mixin input(place)
+	.form-group
+		input.form-control(
+			placeholder=place
+		)
+mixin textoarea(textoa)
+	.form-group
+		textarea.form-control(
+			placeholder=textoa
+		)
+

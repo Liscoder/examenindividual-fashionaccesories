@@ -1,0 +1,58 @@
+
+.about{
+	@extend .tipografia;
+	img{
+		@include border-radius(50%);
+		border: #f1f1f1 solid;
+		margin-top:10px;
+	}
+}
+.team{
+	background-color:#f7f7f7;
+	img{
+		@include border-radius(50%);
+	}
+	ul{
+		li{
+			background:black;
+			color:white;
+			padding:4%;
+			@include border-radius(50%);
+		}
+	}
+}
+
+.contact{
+	background-color:#222222;
+	color:white;
+}
+form{
+	textarea.form-control {
+    height: 9em;
+	}
+}
+
+.about{
+		margin:auto;
+		text-align:center;
+		.adicional{
+				text-align:center;
+				margin-left:36em;
+				p{
+				background-color:#fed136;
+				color:white;
+				border:4px solid #f5f5f5;
+				border-radius:50%;
+				text-align:center;
+				margin-top:10px;
+				padding:29%;
+				font-style: normal;
+				font-family:"Montserrat"
+
+				}
+
+			}
+		}
+.team{
+	@extend .tipografia;
+}

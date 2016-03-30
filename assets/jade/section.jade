@@ -1,0 +1,68 @@
+section.autum
+section.presentation
+	.container
+		.row.text-center
+			.col-md-5
+				.accesories
+			.col-md-7
+				.newarrival
+			.col-md-12.text-center.margin-auto
+				+separacion("LATEST","BESTSELLER","SALE")
+		.row.fotos
+			+fotografia("assets/images/a1.jpg")
+			+fotografia("assets/images/b1.jpg")
+			+fotografia("assets/images/c1.jpg")
+			+fotografia("assets/images/d1.jpg")
+section.marcas
+	.container
+		.row
+			+marcas("assets/images/client1.jpg")
+			+marcas("assets/images/client2.jpg")
+			+marcas("assets/images/client3.jpg")
+			+marcas("assets/images/client4.jpg")
+			+marcas("assets/images/client5.jpg")
+			+marcas("assets/images/client6.jpg")
+section.separador		
+		.col-md-12.text-center
+			+separacion("CLOTING","EQUIPMENTS","JEWELLERY")
+section.clothing
+	.container
+		.row
+			+clothing("assets/images/a2.jpg","242.00")
+			+clothing("assets/images/d2.jpg","")
+			+clothing("assets/images/g2.jpg","")
+			+clothing("assets/images/c2.jpg","")
+			+clothing("assets/images/c2.jpg","242.00")
+			+clothing("assets/images/e2.jpg","")
+section.blog
+	.container
+		.col-md-12
+			ul.pagination
+				li:a(href="#" aria-label="Previus")
+					span(aria-hidden="true") &laquo;
+				li:a BLOG
+				li:a(href="#" aria-label="Previus")
+					span(aria-hidden="true") &raquo;
+		.col-md-12
+			+blog("assets/images/blog2.jpg")
+			+blog("assets/images/blog1.jpg")
+			+blog("assets/images/blog2.jpg")
+			+blog("assets/images/blog3.jpg")
+section.details
+	.container
+		.row
+			.col-md-4
+				.col-md-3
+					span.fa.fa-phone-square
+				.col-md-9
+					+detalles("ORDER ONLINE NOW","Call Us:(0123)456789")
+			.col-md-4
+				.col-md-3
+					span.fa.fa-plane
+				.col-md-9
+					+detalles("FREE WORLDWIDE SHIPPING","On Order Over $100")
+			.col-md-4
+				.col-md-3
+					span.fa.fa-money
+				.col-md-9
+					+detalles("30 DAYS MONEY BACK 100%", "Satisfact on Guanantee")
